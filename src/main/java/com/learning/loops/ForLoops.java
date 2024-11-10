@@ -153,5 +153,24 @@ public class ForLoops {
 
             //input =
         }while (i != 1);
+
+//        String returnValue = learnReturn();
+//        System.out.println(returnValue);
+        learnReturn();
+        //...
+        //...
+    }
+
+
+    public static void learnReturn() {
+        int counter = 1;
+
+        while (true) {
+            if(counter == 5) {
+                return; // exit the function, return the control to the main()
+            }
+            System.out.println("I am running " + counter);
+            counter++;
+        }
     }
 }
