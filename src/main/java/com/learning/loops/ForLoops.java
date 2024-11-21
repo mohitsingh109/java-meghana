@@ -66,11 +66,16 @@ public class ForLoops {
 //        }
 
         int index = 0;
+        String s = "Mohit";
+        while (index > s.length()) { // true
+            System.out.println(s.charAt(index));
+            index++;
+        }
 
-//        while (index < s.length()) { // true
-//            System.out.println(s.charAt(index));
-//            index++;
-//        }
+        do {
+            System.out.println("It worked");
+            index++; //1
+        }while (index > s.length()); //1 > 5
 
 //        for(;;) {
 //            System.out.println("10...");
@@ -85,7 +90,7 @@ public class ForLoops {
             if(str.charAt(i) == '$') {
                 break;
             }
-            System.out.println(str.charAt(i));
+            System.out.println(str.charAt(i)); //AABFJ
         }
 
         System.out.println("----------------");
@@ -95,6 +100,8 @@ public class ForLoops {
                 continue; // skip below code take to the step operation
             }
             System.out.println(str.charAt(i));
+            //...
+            //...
         }
 
         /**
@@ -103,13 +110,22 @@ public class ForLoops {
          * ***
          * **** ---- Row 4
          */
+
+        //num > 0 (5)
+        //num >= 0 (6)
+
+        // loop 10
+        // loop 20
+
                          // 4 <= 4
-        for(int row = 1; row <= 4; row++) { // row = 4
+        for(int row = 1; row < 5; row++) { // row = 4
             // * based on the row number
             // nested for loop
             //                1  <=  2
             for(int col = 1; col <= row; col++) { // col = 1
                 System.out.print("*");
+
+                //break;
             }
             System.out.println(); // taking to next line
         }
